@@ -1,0 +1,49 @@
+<html>
+<script language="JavaScript">
+<!--
+if (window.Event)
+document.captureEvents(Event.MOUSEUP);
+function nocontextmenu()
+{
+event.cancelBubble = true
+event.returnValue = false;
+return false;
+}
+function norightclick(e)
+{if (window.Event)
+{
+if (e.which == 2 || e.which == 3)
+return false;
+}
+else
+if (event.button == 2 || event.button == 3)
+{
+event.cancelBubble = true
+event.returnValue = false;
+return false;
+}
+}
+document.oncontextmenu = nocontextmenu; // for IE5+
+document.onmousedown = norightclick; // for all others
+//-->
+</script>
+<body>
+<h1>HELLO!</h1>
+<style>
+body {
+  background-image: url('https://api.vvhan.com/api/acgimg');
+  background-repeat: no-repeat;
+ background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+<div id="datetime">
+    <script>
+        setInterval("document.getElementById('datetime').innerHTML=new Date().toLocaleString();", 1000);
+    </script>
+</div>
+<p1>asdfghjkkkkkkkkkkkjygggggggggggg</p1>
+<a href='https://api.vvhan.com/api/qqChat?qq=2528656292'>联系我</a>
+<a href='https://api.vvhan.com/'>免费api</a>
+</body>
+</html>
